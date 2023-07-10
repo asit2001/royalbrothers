@@ -1,0 +1,78 @@
+.container{
+    width: 350px;
+    padding: 15px;
+    box-shadow: rgba(26,26,29,0.3) 0px 15px 46px -10px !important;
+    background-color: var(--color-white);
+}
+.heading{
+    font-size: 22px;
+    padding: 10px 0;text-align: center;
+}
+.input__heading{
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+.date__time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    position: relative;
+    margin-bottom: 20px;
+}
+.date,.time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.icon{
+    width: 30px;
+    padding: 5px;
+}
+.input{
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.calender{
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+}
+.timeSelector{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--color-white);
+    z-index: 99;
+    left: 10px;
+    padding: 10px 0;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.timeSelector li{
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.timeSelector li:hover{
+    background-color: var(--color-yellow);
+    transition: all ease-in-out 0.3s;
+}
+.btn{
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-yellow);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+}
+.btn:hover{
+    background-color: var(--color-dark-yellow);
+}

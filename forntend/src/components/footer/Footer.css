@@ -1,0 +1,157 @@
+.container{
+  background-color: #373737;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.footer_container{
+  width: 90%;
+  margin: 30px auto 0;
+  display: grid;
+  padding: 30px 0;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2rem;
+  justify-content: space-between;
+  color : white;
+}
+
+.footer_boxes_heading{
+margin-bottom: 2rem;
+font-size: 1em;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.footer_boxes_heading:after {
+content: "";
+display: block;
+height: 0.1563em;
+background-color: #fed250;
+width: 3.5em;
+margin-top: 0.5em;
+}
+
+.footer_boxes ul li{
+display: flex;
+margin-top: 6px;
+align-items: center;
+gap: 10px;
+}
+
+.hiringAlert{
+background-color: #555555;
+border-radius: 0.3125em;
+padding: 0.1em 0.5em;
+margin-left: 0.5em;
+}
+
+
+.footer_boxes ul li img{
+height: 44px;
+width: 142px;
+}
+
+/*  */
+
+
+.sub_footer {
+  background-color: #444444;
+  display: flex;
+  color: white;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sub_footer_container {
+  width: 90%;
+  padding: 20px;
+}
+
+.sub_footer_container h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 35px;
+}
+
+.sub_footer_container p {
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 150%;
+  color: #ddd;
+  width: 100%;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.cityLinks {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cityLinksHeading {
+  margin: 2em 0;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.cityLinksHeading::after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  background-color: #fed250;
+  width: 3.5rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+.cityLinks .para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 25px;
+  width: 90%;
+}
+
+.footerCopy {
+  color: #fff;
+  text-align: center;
+  background-color: #373737;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.15em !important;
+  margin: 0;
+  width: 100%;
+  font-weight: 400;
+}
+
+.footerCopy p {
+  margin: 10px 0;
+}
+@media screen and (max-width:700px) {
+  .container{
+    font-size: 80%;
+  }
+  .sub_footer_container h1{
+    font-size: 20px;
+  }
+    .para,.sub_footer_container{
+        width: 100%;
+    }
+    .footer_container{
+      grid-template-columns: auto !important;
+      width: 90%;
+    }
+}
+@media screen and (max-width:950px) {
+    .footer_container{
+      grid-template-columns: auto auto;
+    }
+}

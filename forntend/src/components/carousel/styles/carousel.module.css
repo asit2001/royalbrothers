@@ -1,0 +1,29 @@
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+.carousel{
+    cursor: pointer;
+}
+.carousel__item{
+    width: 100%;
+    overflow: hidden;
+}
+.carousel__item img{
+    width: 100%;
+    object-fit: contain;
+    max-width: 90vw;
+    position: relative;
+}
+
+.textContainer{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    max-width: 400px;
+    text-align: start;
+}
+.text__header{
+    margin: 10px 0;
+}

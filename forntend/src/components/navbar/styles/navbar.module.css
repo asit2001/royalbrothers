@@ -1,0 +1,108 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: var(--color-white);
+}
+.logo {
+  height: 50px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.hamburger {
+  margin: 0 15px;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+.nav__section {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 100%;
+  gap: 15px;
+}
+.rbxLogo {
+  height: 30px;
+}
+.navItem,
+.dropDown__item {
+  position: relative;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  height: 40px;
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+.navItem:hover,
+.dropDown__item:hover {
+  background-color: var(--color-yellow);
+  transition: all ease-in-out 0.3s;
+}
+.navItem:hover .dropDown {
+  display: flex;
+}
+.btn__container {
+  margin: 0px 10px;
+}
+.outline {
+  border: 1px solid var(--color-yellow);
+  border-radius: 5px;
+}
+.btn {
+  background-color: var(--color-dark-yellow);
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+.nav__link{
+  color: #000;
+  text-decoration: none;
+}
+.downArrow {
+  height: 22px;
+  width: 22px;
+  margin-left: 5px;
+}
+/* dropdown styles */
+.dropDown {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.dropDown__item {
+  width: 100%;
+}
+@media screen and (max-width:1000px) {
+  .nav__section .nav__list,.navItem,.btn{
+      display: none;
+  }
+  .outline{
+    display: flex !important;
+  }
+  .logo{
+    height: 40px;
+  }
+}

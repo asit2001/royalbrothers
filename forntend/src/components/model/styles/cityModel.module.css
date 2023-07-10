@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+
+}
+.model {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  max-width: 900px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.header,
+.searchContainer {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  height: 45px;
+}
+.header span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.closeBtn {
+  font-size: 30px !important;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.searchIcon {
+  width: 24px;
+  height: 24px;
+}
+.searchContainer {
+  width: 100%;
+  padding: 10px;
+  color: var(--color-gray);
+}
+.searchInput {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.clearBtn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+.clearBtn:hover {
+  color: var(--color-dark-yellow);
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    overflow-y: scroll;
+    place-items: center;
+    gap: 30px;
+    width: 100%;
+    padding-top: 20px;
+}
+.cardContainer::-webkit-scrollbar{
+    display: none;
+}
+.card {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  border-radius: 10px;
+}
+
+.cityName {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  margin: 15px 0;
+  text-align: center;
+  color: var(--color-white);
+}
+@media screen and (min-width: 600px) {
+  .card:hover {
+    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+}
+@media screen and (max-width:900px) {
+    .model{
+        height: 100%;
+    }
+}
+@media screen and (max-width:780px) {
+    .cardContainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:600px) {
+    .cardContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

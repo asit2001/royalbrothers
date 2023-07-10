@@ -1,0 +1,62 @@
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+.card__container{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.text{
+    margin: 20px 0;
+    text-align: center;
+}
+.sorting{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+.select{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #f0efef;
+    justify-content: space-between;
+    width: 200px;
+    border-radius: 10px;
+}
+.select:hover{
+    border: 1px solid #ddd;
+}
+.select__optionContainer{
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    background-color: var(--color-white);
+    cursor: pointer;
+    width: 200px;
+    left: 0;
+    border-radius: 5px;
+}
+.select__option{
+    padding: 8px 20px;
+}
+@media screen and (max-width:800px) {
+    .sorting{
+        justify-content: center;
+    }
+}
