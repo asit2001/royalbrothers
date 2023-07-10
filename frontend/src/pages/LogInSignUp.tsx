@@ -118,7 +118,7 @@ function LogInSignUp() {
             </label>
           </div>
 
-          <button onClick={handelSubmit} className={style.btn}>{isLogin?"Sign Up":"Login with password"}</button>
+          <button onClick={handelSubmit} className={style.btn}>{!isLogin?"Sign Up":"Login with password"}</button>
         </form>
             <Toaster/>
       </div>
